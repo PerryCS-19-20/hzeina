@@ -1,0 +1,19 @@
+<!doctype html>
+<html>
+	<head>
+	</head>
+	<body>
+		<textarea  rows="10" cols="80" id="inputText">Input html to test here</textarea>
+    <button onclick="testHTML();">Test!</button>
+
+    
+    <span id="s1" onclick="clicked();">Hello</span>
+		<script>
+			function testHTML() {
+				var userInput = document.getElementById("inputText");
+        var userInput2 = document.getElementById("s1");
+        userInput2.innerHTML = userInput.value;
+			}
+		</script>
+	</body>
+</html>
