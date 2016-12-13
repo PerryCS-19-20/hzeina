@@ -1,1 +1,43 @@
-bfdggzd
+<!doctype html>
+<html>
+	<head>
+	</head>
+	<body>
+		<textarea  rows="10" cols="80" id="inputText">Input html to test here</textarea>
+    <button onclick="testHTML();">Test!</button>
+
+    
+    <span id="s1" onclick="clicked();">Hello</span>
+		<script>
+			function testHTML() {
+				var list = document.getElementById("thelist");
+				
+    
+			
+		
+		var li = document.createElement("li");
+		li.textContent =  document.getElementById("inputText").value;
+			list.appendChild(li);
+			}
+      
+      
+		</script>
+    <h1>To Do List</h1>
+        <br>
+        <ul id="thelist">
+          
+        </ul>
+       for(var i=0; i < 100; i++){
+            var li = document.createElement("li");
+            li.textContent = "i will not" + document.getElementById("inputText").value;
+            list.appendChild(li);                
+		
+			
+		
+		
+
+        
+	</body>
+</html>
+Contact GitHub API Training Shop Blog About
+© 2016 GitHub, Inc. Terms Privacy Security Status Help
