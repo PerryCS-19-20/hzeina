@@ -3,15 +3,14 @@
    <head>
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width">
-      <title>Cylinder Calc</title>
+      <title>Circle Calc</title>
       <script>
          function calc() {
-            var h = parseFloat(document.getElementById("height").value);
-            var r = parseFloat(document.getElementById("rad").value);
-            var vol = document.getElementById("vol");
+            var r = parseFloat(document.getElementById("radius").value);
+            var area = document.getElementById("area");
             
-            var area= Math.PI * r * r;
-            vol.value = (area * h).toFixed(2);
+            var areaCalc= Math.PI * r * r;
+            area.value = areaCalc;
          }
       </script>
       <style>
@@ -26,10 +25,10 @@
 style="float; left; height: 150px; margin-right: 5px;">
       <h2>v = h &pi; r <sup>2</sup></h2>
       
-      h: <input type="number" id="height" placeholder="height"><br>
-      r: <input type="number" id="rad" placeholde="radius">
+      
+      r: <input type="number" id="radius" placeholde="radius">
       <button onclick="calc();">Calculate</button>
       <hr>
-      v: <input type="output" id="vol" placeholder="volume" readonly>
+      area: <input type="output" id="area" placeholder="area" readonly>
    </body>
 </html>
