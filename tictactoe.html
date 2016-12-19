@@ -4,29 +4,49 @@
     <title>Tic-Tac-Toe</title>
     <style>
       td{
-        border: 1px;
+          height: 100px;
+          width: 100px;
+          border: solid 1px;
+          font-size: 80pt;           
       }
     </style>
   </head>
   <body>
+      <script>
+          var count = 1;
+          function getPlay(){
+              if(count == 1){
+                  count = 2;
+                  return "X";
+              } else {
+                  count = 1;
+                  return "O";
+              }
+          }
+          function play(id){
+              var td = document.getElementById(id);
+              td.textContent = getPlay();
+          }
+          
+      </script>
     <h1>Tic-Tac-Toe</h1>
     <table border="1px">
       <tr>
-        <td id="s1"> </td>
-        <td id="s2"> </td>
-        <td id="s3"></td>
+        <td id="s1" onclick="play('s1')"> </td>
+        <td id="s2" onclick="play('s2')"> </td>
+        <td id="s3" onclick="play('s3')"></td>
       </tr>
       
       <tr>
-        <td id="s4"> </td>
-        <td id="s5"> </td>
-        <td id="s6"> </td>
+        <td id="s4" onclick="play('s4')"> </td>
+        <td id="s5" onclick="play('s5')"> </td>
+        <td id="s6" onclick="play('s6')"> </td>
       </tr>
       
       <tr>
-        <td id="s7"> </td>
-        <td id="s8"> </td>
-        <td id="s9"> </td>
+        <td id="s7" onclick="play('s7')"> </td>
+        <td id="s8" onclick="play('s8')"> </td>
+        <td id="s9" onclick="play('s9')"> </td>
       </tr>
       
     </table>
